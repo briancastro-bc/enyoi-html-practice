@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica CSS</title>
+  <!-- PRIMERA FORMA DE IMPORTAR ESTILOS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- SEGUNDA FORMA DE IMPORTAR ESTILOS -->
+  <!-- <style>
+    /* SINTAXIS O ESCRITURA DE CSS ES LA SIGUIENTE:
+      nombreEtiqueta {
+        atributos: valor;
+      }
+    */
+    h1 {
+      color: #06e006;
+    }
+  </style> -->
+</head>
+<body>
+  <!-- TERCERA FORMA DE IMPORTAR ESTILOS -->
+  <!-- <h1 style="color: #91abfd;">
+    Esto es un archivo desde mis descargas
+  </h1> -->
+  <h1>
+    Hola mundo!
+  </h1>
+
+  <div class="dot"></div>
+  
+  <!-- IDENTIFICADORES/ATRIBUTO ID DE ETIQUETAS: 
+    no deben tener espacios, caracteres especiales.
+    Recomendado usar minuscula y pascalCase, snake_case o UpperCase, other-case,
+  -->
+  <h1 id="main-title" class="app-title">
+    Mi titulo principal
+  </h1>
+
+  <!-- 
+    CLASES/ATRIBUTO CLASS DE ETIQUETAS:
+    no deben tener espacios, caracteres especiales.
+    Recomendado usar minuscula y pascalCase, snake_case o UpperCase, other-case,
+
+    ! NOTA: UN ELEMENTO PUEDE TENER N CANTIDAD DE CLASES,
+    ! PERO DEBEN ESTAR SEPARADAS POR ESPACIO.
+  -->
+  <h2 class="app-title class2">
+    Mi otro titulo principal
+  </h2>
+
+  <h2 class="app-title">
+    Ejemplo de reutilización de la clase
+  </h2>
+
+  <p class="app-title">
+    Esto es un parrafo con la clase app-title
+  </p>
+  <!-- <h1 style="color: green;">
+    Adios mundo!
+  </h1>
+  <h1 style="color: green;">
+    Hola hola
+  </h1>
+  <h1 style="color: green;">
+    Adios, adios
+  </h1> -->
+</body>
+</html>

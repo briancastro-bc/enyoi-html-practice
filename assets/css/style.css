@@ -1,0 +1,33 @@
+/* Esto es un comentario en css. Nota: los comentarios se ignoran
+por el interprete de estilos de css */
+@import './normalize.css';
+
+h1 {
+  margin: 0;
+}
+
+#main-title {
+  color: green;
+  font-size: 40px;
+}
+
+/* {
+  px (pixel): 
+} */
+
+
+
+.app-title {
+  color: red;
+  margin: 150px 50px 20px 100px;
+  border: 5px solid red;
+  padding: 150px 50px 20px 100px;
+  font-size: 56px;
+}
+
+.class2 {
+  color: brown;
+  border-color: blue;
+}
+
+
