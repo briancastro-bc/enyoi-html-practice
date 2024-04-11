@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #FFB380;
+  padding: 1rem;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: red;
+}

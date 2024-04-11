@@ -1,6 +1,7 @@
 /* Esto es un comentario en css. Nota: los comentarios se ignoran
 por el interprete de estilos de css */
 @import './normalize.css';
+@import './basic-structure.css';
 
 h1 {
   margin: 0;
@@ -12,10 +13,48 @@ h1 {
 }
 
 /* {
-  px (pixel): 
+  px (pixel): unidad absoluta de medida y representa una longitud
+  que siempre estará fija y no va a variar en nuestro diseño.
 } */
 
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
+  margin-bottom: 50px;
+}
 
+.box {
+  /* width: 100px;
+  height: 100px; */
+  width: 50px;
+  height: 20cm;
+  background-color: blueviolet;
+  margin-bottom: 50px;
+}
+
+/* 
+  % (porcentajes): 
+
+  em: por defecto siempre el tamaño de fuente del elemento padre.
+
+  rem: lo mismo que el em, pero toma en cuenta siempre el tamaño
+  del elemento raíz, es decir, el html.
+*/
+
+.parent {
+  width: 350px;
+  height: 350px;
+  font-size: 50px;
+  background-color: yellow;
+  margin-bottom: 50px;
+}
+
+.parent .child {
+  width: 1rem;  /* 1 em = 50px */
+  height: 2rem;
+  background-color: blue;
+}
 
 .app-title {
   color: red;
@@ -30,4 +69,10 @@ h1 {
   border-color: blue;
 }
 
-
+.screen {
+  /* width = 1920px */
+  width: 100vw; 
+  /* height = 1080px */
+  height: 100vh;
+  background-color: black;
+}
