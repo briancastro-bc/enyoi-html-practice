@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" translate="no">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,28 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="content">
   <header class="navbar">
     <div class="navbar__container">
-      <!-- <a 
-        class="navbar__brand" 
-        href="https://www.typescriptlang.org/branding/"
-        target="_blank">
-        <i class="bx bxl-meta"></i>
-      </a> -->
       <a class="navbar__logo">
         <i class="bx bxl-meta"></i>
-        <span class="navbar__logo__text">Meta</span>
+        <span class="navbar__logo__text">
+          Meta
+        </span>
       </a>
+      <nav class="navbar__nav mobile__navbar">
+        <a class="nav__link nav__dropdown">
+          <i class="bx bx-menu"></i>
+          <div class="nav__menu">
+            <div class="nav__menu__items">
+              <span>Inicio</span>
+              <span>Acerca de</span>
+              <span>Soporte</span>
+            </div>
+          </div>
+        </a>
+      </nav>
       <nav class="navbar__nav">
         <a href="" class="nav__link">
           Inicio
@@ -31,20 +41,74 @@
           Soporte
         </a>
         <a href="" class="nav__link nav__dropdown">
-          Menu
-        </a>
-        <div class="nav__menu">
-          <div class="nav__menu__items">
-            <span>Elemento 1</span>
-            <span>Elemento 2</span>
+          <span>Menu</span>
+          <div class="nav__menu">
+            <div class="nav__menu__items">
+              <span>Elemento 1</span>
+              <span>Elemento 2</span>
+            </div>
           </div>
-        </div>
+        </a>
       </nav>
     </div>
   </header>
   <main class="content__main">
-    <h1>Hola mundo</h1>
+    <div class="home__container">
+      <div class="home__content">
+        <h1 class="home__content__title">
+          Las <span>formas</span> de conectarse <span>evolucionan</span>, 
+          y nuestra <span>empresa</span> también
+        </h1>
+        <p class="home__content__description">
+          Conéctate con otras personas y con lo que te interesa en las tecnologías de Meta para que tu mundo sea tuyo.
+        </p>
+        <div>
+          <button class="home__content__button">
+            Ir al sitio
+            <i class='bx bx-right-arrow-alt'></i>
+          </button>
+        </div>
+        <div class="home__content__media">
+          <figure class="home__content__media__logo">
+            <img class="logo" src="assets/images/messenger.svg" alt="Messenger isotipo">
+          </figure>
+          <figure class="home__content__media__logo">
+            <img class="logo" src="assets/images/whatsapp.svg" alt="whatsapp isotipo">
+          </figure>
+          <figure class="home__content__media__logo">
+            <img class="logo" src="assets/images/instagram-iso.svg" alt="Instagram isotipo">
+          </figure>
+          <figure class="home__content__media__logo">
+            <img class="logo" src="assets/images/facebook-iso.svg" alt="Facebook isotipo">
+          </figure>
+        </div>
+      </div>
+      <div class="home__media">
+        <div class="home__media__logos">
+          <figure class="home__media__logos__wrapper">
+            <img class="logo" src="assets/images/facebook.svg" alt="Facebook logotipo">
+          </figure>
+          <figure class="home__media__logos__wrapper">
+            <img class="logo" src="assets/images/instagram.svg" alt="Instagram logotipo">
+          </figure>
+        </div>
+        <div class="home__media__isos">
+          <figure class="home__media__isos__wrapper">
+            <img class="iso" src="assets/images/messenger.svg" alt="Messenger isotipo">
+          </figure>
+          <figure class="home__media__isos__wrapper">
+            <img class="iso" src="assets/images/whatsapp.svg" alt="whatsapp isotipo">
+          </figure>
+          <figure class="home__media__isos__wrapper">
+            <img class="iso" src="assets/images/instagram-iso.svg" alt="Instagram isotipo">
+          </figure>
+          <figure class="home__media__isos__wrapper">
+            <img class="iso" src="assets/images/facebook-iso.svg" alt="Facebook isotipo">
+          </figure>
+        </div>
+      </div>
+    </div>
   </main>
-  <section class="full-height"></section>
 </body>
+
 </html>
